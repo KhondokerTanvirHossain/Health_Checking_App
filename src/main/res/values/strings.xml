@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Health Care</string>
+    <string name="hello">বাংলা লিখুন</string>
+    <string name="hint">বাংলা লিখুন</string>
+    <string name="time">কম্পনের সময়</string>
+    <string name="send">পাঠান</string>
+</resources>

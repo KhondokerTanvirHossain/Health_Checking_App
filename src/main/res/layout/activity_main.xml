@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btPairBlue"
+                    android:text="Pair with HC5"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btConnectBlue"
+                    android:text="Connect with HC5"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btSendBlue"
+                    android:text="Send Data to HC5"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btRead"
+                    android:text="Read from HC5"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btResult"
+                    android:text="See the Reasult"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="NO CONNECTION"
+                android:id="@+id/tv"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="BPM : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bpm"
+                    android:text="0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="BPM LEVEL: "/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/bpmLevel"
+                        android:text="0"/>
+                </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="SpO2 : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/so2"
+                    android:text="0"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:text="SPO2 LEVEL: "/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/spo2Level"
+                            android:text="0"/>
+                    </LinearLayout>
+                    </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="TEMPRATURE : "/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tem"
+                    android:text="0"/>
+            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:text="TEMPRATURE LEVEL: "/>
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/temLevel"
+                                android:text="0"/>
+                        </LinearLayout>
+                        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btInsert"
+                android:text="Save"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btData"
+                android:text="Database"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
