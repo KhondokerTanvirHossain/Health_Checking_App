@@ -30,6 +30,8 @@ This is an android application connected to a arduino that has pulse oxymeter wh
 * Download this project
 * Build hardware setup
 * Move the PHP folder to your server (Ex. for xampp keep it in htdocs)
+* Create a databse name 'health'
+* Import the sql file from Database folder to your database
 * Run the arduino project from ARDUINO folder into your hardware setup
 * Import and build this file in android studio
 * Install it in your android phone or in emulator
